@@ -71,7 +71,7 @@ class Mg2HfConvert(Convert):
 
         if self.hf_cfg_dir is not None:
             self.copy_hf_cfg()
-        self.update_hf_cfg_rope_theta()
+            self.update_hf_cfg_rope_theta()
 
         self.tensor_model_parallel_size = self.load_model.tensor_model_parallel_size
         self.pipeline_model_parallel_size = self.load_model.pipeline_model_parallel_size
